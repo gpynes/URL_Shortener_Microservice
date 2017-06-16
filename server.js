@@ -29,7 +29,7 @@ const validUrl = new RegExp(/^(http:\/\/www\.|https:\/\/www\.)[a-z0-9]+([\-\.]{1
 server.get('/new/*', (req, res) => {
   const url = req.params[0]
   if (!validUrl.test(url)) {
-    res.status(500).json({error: 'not a valid url'})
+      res.status(500).json({error: 'Wrong url format, make sure you have a valid protocol and real site.'})
       return
   }
   if (!urls[url]) {
