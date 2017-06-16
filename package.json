@@ -1,0 +1,10 @@
+{
+    "name": "URL_Shortener_Microservice",
+    "description": "A simple microservice for creating shortend urls",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.15.3"
+    }
+}
